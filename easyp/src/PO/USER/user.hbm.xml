@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="PO.USER">
+	<class name="user" table="users">
+		<id name="id" column="u_id">
+			<generator class="native"></generator>
+		</id>
+		
+		<property name="name" column="u_name"></property>
+		<property name="passw" column="u_passw"></property>
+		
+	</class>
+
+</hibernate-mapping>

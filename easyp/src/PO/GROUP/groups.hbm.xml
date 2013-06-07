@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="PO.GROUP">
+	<class name="groups" table="groups">
+		<id name="gid" column="g_id">
+			<generator class="native"></generator>
+		</id>
+		
+		<property name="gname" column="g_name"></property>
+		
+	<many-to-one name="gcreater" column="g_creat" lazy="false"></many-to-one>
+	<many-to-one name="gpro" column="g_pro" lazy="false"></many-to-one>
+	</class>
+
+</hibernate-mapping>

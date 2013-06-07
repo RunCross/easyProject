@@ -1,0 +1,44 @@
+ @charset "utf-8";
+/* CSS Document */
+
+#head {position:absolute;
+left:0px;
+top:0px;
+width:1650px;
+height:50px;
+background-color:#39F;
+font-size:18px;
+font-family:Georgia, "Times New Roman", Times, serif;
+
+font-weight:bolder;}
+
+
+#mainmenu {position:absolute;
+left:30px;
+top:70px;
+width:1650px;
+height:40px;
+background-color:#6FF;}
+
+#MenuBar1 {
+	position:absolute;
+	left:0px;
+	top:51px;
+	width:2500px;
+	height:40px;
+}
+
+
+#left {
+	position:absolute;
+	left:3px;
+	top:123px;
+	width:74px;
+	height:24px;
+}
+#welcome{
+		position:absolute;
+		left:950px;
+		top:48px;
+		color:black;
+	}

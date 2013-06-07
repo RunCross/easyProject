@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="PO.PROJECT">
+	<class name="project" table="project">
+		<id name="pid" column="p_id">
+			<generator class="native"></generator>
+		</id>
+		<property name="pname" column="p_name"></property>
+		
+		<property name="ctime" column="p_stime"></property>
+		<property name="ectime" column="p_etime"></property>
+		<property name="psec" column="p_sec"></property>
+		<property name="profile" column="p_syno"></property>
+	
+		
+		<!--下面语句映射多对一 name指定属性名，column指定外键字段名称-->
+		<many-to-one name="manager" column="p_manager" lazy="false"></many-to-one>
+	</class>
+
+</hibernate-mapping>
